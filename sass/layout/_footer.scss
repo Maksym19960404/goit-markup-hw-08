@@ -1,0 +1,110 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--background-color);
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer__box {
+    flex-grow: 1;
+}
+
+.page-footer__logo {
+    margin-bottom: 20px;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+
+.page-footer__white-logo {
+    color: var(--primary-white-color);
+}
+
+
+/*--------- АДРЕС------------*/
+.address {
+    font-style: normal;
+}
+
+
+.address__item {
+    margin-bottom: 9px;
+
+
+ &:not(:last-child) {
+    margin-bottom: 9px;
+}
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--anim-fast);
+
+
+ &:hover,
+ &:focus {
+    color: var(--accent-text-color);
+}
+}
+
+
+/*------приєднуйтесь footer-------*/
+
+.social-footer {
+    width: 206px;
+    margin-left: 70px;
+}
+
+.social-footer__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+}
+
+.social-footer__list {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.social-footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color var(--anim-fast);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-text-color);
+        }
+}
+
+.social-footer__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+}
+
+
