@@ -1,9 +1,19 @@
-.filter__list {
-    margin-bottom: 50px;
-
-    display: flex;
+.filter {
+            margin-bottom: 40px;
+display: flex;
     justify-content: center;
     gap: 8px;
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 30px;
+        }
+
+    @media screen and (min-width: 1200px){      
+        margin-bottom: 50px;
+    }
+    
+
+    
 }
 
 .filter__button {
