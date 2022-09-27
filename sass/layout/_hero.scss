@@ -19,37 +19,47 @@
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 217px;
-    min-height: 50px;
-    padding: 10px 32px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-    color: var(--primary-white-color);
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-style: none;
-    transition: background-color var(--anim-fast);
+        margin-left: auto;
+        margin-right: auto;
+    
+        max-width: 217px;
+        min-height: 50px;
+        padding: 10px 24px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+        color: var(--primary-white-color);
+        background: #2196f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-style: none;
+        transition: background-color var(--anim-fast);
+        
+    @media screen and (min-width: 1200px){
+        padding: 10px 32px;
+    }
+    
 
 
 &:hover {
