@@ -5,12 +5,38 @@
 }
 
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+margin-bottom: 0;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        align-items: baseline;
+        display: flex;
+        text-align: left;
+
+    }
 }
 
+.page-footer__tablet{
+
+    margin-bottom: 60px;
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+    
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 0;
+        }
+    }
+
 .page-footer__box {
-    flex-grow: 1;
+    margin-bottom: 60px;
 }
 
 .page-footer__logo {
@@ -19,10 +45,17 @@
 
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    
+    font-size: 24px;
+    line-height: 1.16;
+    
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
+
+    @media screen and (min-width: 1200px){
+        font-size: 26px;
+        line-height: 1.2;
+    }
 }
 
 .page-footer__white-logo {
@@ -40,9 +73,9 @@
     margin-bottom: 9px;
 
 
- &:not(:last-child) {
-    margin-bottom: 9px;
-}
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
 .address__link {
@@ -52,18 +85,24 @@
     transition: color var(--anim-fast);
 
 
- &:hover,
- &:focus {
-    color: var(--accent-text-color);
-}
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
 }
 
 
 /*------приєднуйтесь footer-------*/
 
 .social-footer {
-    width: 206px;
-    margin-left: 70px;
+    justify-content: center;    
+    @media screen and (min-width: 768px) {
+        }
+
+    @media screen and (min-width: 1200px){
+            width: 206px;
+            margin-left: 70px;
+    }
 }
 
 .social-footer__title {
@@ -80,9 +119,16 @@
 
 .social-footer__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     cursor: pointer;
+            justify-content: center;
 
+}
+
+
+
+.social-footer__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social-footer__link {
@@ -97,8 +143,8 @@
 
     &:hover,
     &:focus {
-            background-color: var(--accent-text-color);
-        }
+        background-color: var(--accent-text-color);
+    }
 }
 
 .social-footer__icon {
@@ -106,5 +152,3 @@
     height: 20px;
     fill: var(--primary-white-color);
 }
-
-
