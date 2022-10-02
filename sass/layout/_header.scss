@@ -1,4 +1,10 @@
  .header {
+
+    @media screen and (max-width: 767px) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    
      border-bottom: 1px solid #ECECEC;
  }
 
@@ -27,8 +33,12 @@
  }
 
  .menu {
-     display: flex;
-     margin-left: 93px;
+ display: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+            margin-left: 93px;
+    }
+     
  }
 
  .menu__item+.menu__item {
@@ -84,8 +94,12 @@
  }
 
  .contacts {
-     display: flex;
-     margin-left: auto;
+display: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+            margin-left: auto;
+    }
+     
  
 
  &__item+ &__item {
