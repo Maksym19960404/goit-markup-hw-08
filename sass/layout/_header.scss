@@ -94,33 +94,38 @@
  }
 
  .contacts {
-display: none;
+    display: none;
     @media screen and (min-width: 768px){
-        display: flex;
-            margin-left: auto;
+     display: unset;
+    margin-left: auto;
     }
      
  
 
- &__item+ &__item {
+ &__item:not(:first-child) {
      margin-left: 50px;
+
  }
  }
 
  .contacts__link {
-     padding-top: 32px;
-     padding-bottom: 32px;
 
-     display: inline-flex;
-     align-items: center;
-
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
-     cursor: pointer;
-     color: var(--primary-gray-color);
-     transition: color var(--anim-fast);
+    @media screen and (min-width: 1200px){
+        padding-top: 32px;
+            padding-bottom: 32px;
+        
+            display: inline-flex;
+            align-items: center;
+        
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+            color: var(--primary-gray-color);
+            transition: color var(--anim-fast);
+    }
+     
  
 
 

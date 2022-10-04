@@ -34,7 +34,21 @@
 }
 
 .staff__box {
-    padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 768px){
+            padding-left: 74px;
+            padding-right: 74px;
+            
+    }
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 30px;
+        }
+    
 }
 
 .staff__title {
@@ -58,7 +72,12 @@
 
 .social{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+    @media screen and (min-width: 768px){
+        justify-content: space-between; 
+    }
+   
 }
 
 
@@ -90,4 +109,8 @@
     height: 20px;
     fill: var(--svg-color);
     transition: fill var(--anim-fast);
+}
+
+.staff__img {
+    max-width: 100%;
 }
