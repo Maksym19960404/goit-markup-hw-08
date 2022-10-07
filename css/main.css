@@ -515,7 +515,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
     margin-bottom: -30px;
     gap: 30px;
   }
