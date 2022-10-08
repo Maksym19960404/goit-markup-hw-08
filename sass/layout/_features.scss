@@ -1,7 +1,5 @@
 .features{
-      
     @media screen and (min-width: 768px){
-        gap: 30px;
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
@@ -10,19 +8,20 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-    }
+   }
 }
 
+// .features__item:not(::first-line){
+//         margin-right: 30px;}
 .features__item{
-        @media screen and (min-width: 768px) {
+margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
         flex-basis: calc(100% / 2 - 30px);
-        // margin-right: 30px;
+margin-right: 30px;
     }
 
     @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 4 - 30px);
-        // margin-right: 30px;
-        // margin-bottom: 30px;
     }
     
 }
