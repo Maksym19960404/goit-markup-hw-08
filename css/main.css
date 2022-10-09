@@ -513,7 +513,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: -30px;
     gap: 30px;
   }
 }
@@ -521,11 +520,6 @@ img {
   .staff {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-}
-@media screen and (max-width: 767px) {
-  .staff:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 .staff .staff__item {
@@ -538,7 +532,6 @@ img {
   .staff .staff__item {
     -ms-flex-preferred-size: calc(50% - 30px);
         flex-basis: calc(50% - 30px);
-    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 767px) {
