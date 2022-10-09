@@ -452,6 +452,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -461,13 +463,6 @@ img {
         flex-basis: calc(50% - 15px);
   }
 }
-@media screen and (min-width: 1200px) {
-  .features__item {
-    -ms-flex-preferred-size: calc(25% - 30px);
-        flex-basis: calc(25% - 30px);
-  }
-}
-
 .features__icon-bg {
   margin-bottom: 30px;
   height: 120px;
@@ -711,6 +706,9 @@ img {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
